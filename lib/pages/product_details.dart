@@ -10,8 +10,9 @@ import 'package:shopify/widgets/cart_badge.dart';
 import 'package:shopify/widgets/custom_button_widget.dart';
 import 'package:shopify/widgets/selected_color.dart';
 import 'package:shopify/widgets/selected_size.dart';
-class ProductDetailsPage extends StatefulWidget {
+import 'package:uuid/uuid.dart';
 
+class ProductDetailsPage extends StatefulWidget {
   const ProductDetailsPage({super.key, required this.product});
   final Product product;
 
@@ -21,13 +22,18 @@ class ProductDetailsPage extends StatefulWidget {
 
 class _ProductDetailsPageState extends State<ProductDetailsPage> {
   @override
+  void initState() {
+    Provider.of<CartProvider>(context, listen: false).createItemInstance();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: ColorsConstants.bgColor,
       appBar: productDetailsAppBar(context),
       bottomNavigationBar: buildBottomAppBar(),
-      
-      body: Padding(
+       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
           children: [
@@ -132,17 +138,17 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
               ),
             ),
 
-
-          ]
-    )
-    )
+            
+          ],
+        ),
+      ),
     );
   }
 
   AppBar productDetailsAppBar(BuildContext context) {
     return AppBar(
       centerTitle: true,
-     // backgroundColor: Colors.transparent,
+      backgroundColor: ColorsConstants.bgColor,
       elevation: 0,
       leading: IconButton(
         onPressed: () => Navigator.pop(context),
@@ -235,7 +241,19 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
               iconBgColor: Colors.white,
               txtColor: Colors.white,
               bgColor: ColorsConstants.buttonColor,
-              onBtnPressed: () {},
+              onBtnPressed:  () {
+                    Provider.of<CartProvider>(context, listen: false)
+                        .cartItem
+                        ?.productId = widget.product.id;
+                    Provider.of<CartProvider>(context, listen: false)
+                        .cartItem
+                        ?.quantity = 1;
+                    Provider.of<CartProvider>(context, listen: false)
+                        .cartItem
+                        ?.itemId = Uuid().v4();
+                    Provider.of<CartProvider>(context, listen: false)
+                        .onAddItemToCart(context: context);
+                  },
             )
           ],
         ));

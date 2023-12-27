@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:shopify/models/cart.dart';
 import 'package:shopify/pages/cart_page.dart';
+import 'package:shopify/pages/notification_page.dart';
 import 'package:shopify/pages/splash.dart';
 import 'package:shopify/providers/ads_provider.dart';
 import 'package:shopify/providers/app_auth_provider.dart';
@@ -45,7 +46,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeConstants.themeData,
        home: const Splash(),
-     // home: const CartPage(),
+      //home: const NotificatonPage(),
     );
   }
 }

@@ -18,32 +18,32 @@ class CartBadgeWidget extends StatelessWidget {
             size: 20,
           ),
         ),
-        Positioned(
-            bottom: 6,
-            child: StreamBuilder(
-                stream: Provider.of<CartProvider>(context).cartStream,
-                builder: (ctx, aSnapShot) {
-                  if (aSnapShot.hasData) {
-                    int quantity = 0;
+        // Positioned(
+        //     bottom: 6,
+        //     child: StreamBuilder(
+        //         stream: Provider.of<CartProvider>(context).cartStream,
+        //         builder: (ctx, aSnapShot) {
+        //           if (aSnapShot.hasData) {
+        //             int quantity = 0;
 
-                    for (Map<String, dynamic> item
-                        in aSnapShot.data?.data()?['items']) {
-                      quantity += (item['quantity'] as int);
-                    }
+        //             for (Map<String, dynamic> item
+        //                 in aSnapShot.data?.data()?['items']) {
+        //               quantity += (item['quantity'] as int);
+        //             }
 
-                    return Badge(
-                      smallSize: 15,
-                      backgroundColor: const Color(0xffff6969),
-                      label: Text(
-                        '$quantity',
-                        style: const TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 10),
-                      ),
-                    );
-                  }
+        //             return Badge(
+        //               smallSize: 15,
+        //               backgroundColor: const Color(0xffff6969),
+        //               label: Text(
+        //                 '$quantity',
+        //                 style: const TextStyle(
+        //                     fontWeight: FontWeight.bold, fontSize: 10),
+        //               ),
+        //             );
+        //           }
 
-                  return const SizedBox.shrink();
-                })),
+        //           return const SizedBox.shrink();
+        //         })),
       ],
     );
   }
