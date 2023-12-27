@@ -152,7 +152,7 @@ class _MasterProductPageState extends State<MasterProductPage> with SingleTicker
           ProductPage(),
 
           // second tab bar view widget
-          ProductDetailsPage(),
+         // ProductDetailsPage(),
           // third tab bar view widget
           ProductReviewsPage()
 

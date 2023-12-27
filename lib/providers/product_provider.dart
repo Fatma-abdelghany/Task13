@@ -2,6 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:quickalert/models/quickalert_type.dart';
 import 'package:quickalert/widgets/quickalert_dialog.dart';
+import 'package:shopify/utils/collections.dart';
 
 import '../models/product.model.dart';
 
@@ -11,11 +12,11 @@ class ProductProvider {
       QuerySnapshot<Map<String, dynamic>>? result;
       if (limit != null) {
         result = await FirebaseFirestore.instance
-            .collection('products')
+            .collection(CollectionsUtils.products.name)
             .limit(limit)
             .get();
       } else {
-        result = await FirebaseFirestore.instance.collection('products').get();
+        result = await FirebaseFirestore.instance.collection(CollectionsUtils.products.name).get();
       }
 
       if (result.docs.isNotEmpty) {

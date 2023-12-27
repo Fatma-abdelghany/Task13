@@ -53,6 +53,8 @@ MERGED from [:firebase_auth] /Users/fatma/Documents/FlutterCourse/myprojects/sho
 MERGED from [:firebase_storage] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/firebase_storage/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:cloud_firestore] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
 MERGED from [:firebase_core] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-17:12
+MERGED from [:sqflite] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
+MERGED from [:path_provider_android] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/fatma/.gradle/caches/transforms-3/59c3375fd9e11c827922abb91b461128/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:17:1-75:12
 MERGED from [com.google.firebase:firebase-firestore:24.9.1] /Users/fatma/.gradle/caches/transforms-3/910a81ef385205073c71d48faa4eb2ef/transformed/jetified-firebase-firestore-24.9.1/AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-storage:20.3.0] /Users/fatma/.gradle/caches/transforms-3/6d4b156d21b165f76b84f5fbb8c7ea7d/transformed/jetified-firebase-storage-20.3.0/AndroidManifest.xml:15:1-39:12
@@ -121,6 +123,10 @@ MERGED from [:cloud_firestore] /Users/fatma/Documents/FlutterCourse/myprojects/s
 MERGED from [:cloud_firestore] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/cloud_firestore/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [:firebase_core] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/firebase_core/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:sqflite] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/sqflite/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
+MERGED from [:path_provider_android] /Users/fatma/Documents/FlutterCourse/myprojects/shopify_versions/Task13/build/path_provider_android/intermediates/merged_manifest/debug/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/fatma/.gradle/caches/transforms-3/59c3375fd9e11c827922abb91b461128/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:21:5-23:64
 MERGED from [com.google.firebase:firebase-auth:22.3.0] /Users/fatma/.gradle/caches/transforms-3/59c3375fd9e11c827922abb91b461128/transformed/jetified-firebase-auth-22.3.0/AndroidManifest.xml:21:5-23:64
 MERGED from [com.google.firebase:firebase-firestore:24.9.1] /Users/fatma/.gradle/caches/transforms-3/910a81ef385205073c71d48faa4eb2ef/transformed/jetified-firebase-firestore-24.9.1/AndroidManifest.xml:6:5-44

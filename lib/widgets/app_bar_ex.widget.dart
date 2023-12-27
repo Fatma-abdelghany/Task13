@@ -14,11 +14,11 @@ class AppBarEx {
             children: [
               IconButton(
                   onPressed: () {},
-                  icon: Image.asset('assets/images/Messages.png')
+                  icon: Image.asset('assets/images/Messages.png',)
 
                   ),
               Positioned(
-                  bottom: 6,
+                  bottom:10,
                   child: Badge(
                     backgroundColor: ColorsConstants.badgeColor,
                     label:const Text('5'),
@@ -37,7 +37,7 @@ class AppBarEx {
                 ),
               ),
               Positioned(
-                  bottom: 6,
+                  bottom: 10,
                   child: Badge(
                     backgroundColor: ColorsConstants.badgeColor,
                     label: const Text('5'),

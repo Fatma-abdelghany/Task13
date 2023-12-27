@@ -36,7 +36,7 @@ class _CartPageState extends State<CartPage> {
                                 textAlign: TextAlign.left,
                                 style: TextStyle(
                                   fontSize: 12,
-                                  fontWeight: FontWeight.w200,
+                                  fontWeight: FontWeight.w300,
                                   color: ColorsConstants.greyTxtColor,
                                 ),
                               ),

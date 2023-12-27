@@ -3,7 +3,9 @@ import 'package:provider/provider.dart';
 import 'package:shopify/models/cart.dart';
 import 'package:shopify/pages/cart_page.dart';
 import 'package:shopify/pages/splash.dart';
+import 'package:shopify/providers/ads_provider.dart';
 import 'package:shopify/providers/app_auth_provider.dart';
+import 'package:shopify/providers/cart_provider.dart';
 import 'package:shopify/providers/category_provider.dart';
 import 'package:shopify/providers/home_provider.dart';
 import 'package:shopify/providers/product_provider.dart';
@@ -23,6 +25,8 @@ void main() async{
         Provider(create: (_) => ProductProvider()),
         ChangeNotifierProvider(create: (_) => HomeProvider()),
         Provider(create: (_) => CategoryProvider()),
+        Provider(create: (_) => AdsProvider()),
+        Provider(create: (_) => CartProvider()),
 
 
 
@@ -40,8 +44,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeConstants.themeData,
-      // home: const Splash(),
-      home: const CartPage(),
+       home: const Splash(),
+     // home: const CartPage(),
     );
   }
 }

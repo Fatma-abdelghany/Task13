@@ -30,7 +30,7 @@ class _CarouselSliderExState extends State<CarouselSliderEx> {
             itemBuilder: (BuildContext context, int index, int pageViewIndex) =>
                 buildSliderImage(index),
             options: CarouselOptions(
-              height: 160,
+              height: 190,
               viewportFraction: .9,
               padEnds: false,
               initialPage: 0,
@@ -82,27 +82,27 @@ class _CarouselSliderExState extends State<CarouselSliderEx> {
               width: double.infinity,
               fit: BoxFit.cover,
             ),
-            const Positioned(
-                left: 20,
-                top: 40,
-                child: Text(
-                  'New Offers',
-                  style: TextStyle(
-                      color: Colors.deepPurple,
-                      fontSize: 20,
-                      fontWeight: FontWeight.w700),
-                  // maxLines: 3,
-                  // textDirection: TextDirection.rtl,
-                  //  textAlign: TextAlign.justify,  overflow: TextOverflow.clip,
-                )),
-            Positioned(
-              left: 20,
-              bottom: 20,
-              child: CustomButton(
-                text: "SEE MORE",
-                onBtnPressed: widget.onBtnPressed,
-              ),
-            ),
+            // const Positioned(
+            //     left: 20,
+            //     top: 40,
+            //     child: Text(
+            //       'New Offers',
+            //       style: TextStyle(
+            //           color: Colors.deepPurple,
+            //           fontSize: 20,
+            //           fontWeight: FontWeight.w700),
+            //       // maxLines: 3,
+            //       // textDirection: TextDirection.rtl,
+            //       //  textAlign: TextAlign.justify,  overflow: TextOverflow.clip,
+            //     )),
+            // Positioned(
+            //   left: 20,
+            //   bottom: 20,
+            //   child: CustomButton(
+            //     text: "SEE MORE",
+            //     onBtnPressed: widget.onBtnPressed,
+            //   ),
+            // ),
           ],
         ),
       ),

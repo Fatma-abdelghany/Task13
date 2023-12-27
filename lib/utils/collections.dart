@@ -1,3 +1,3 @@
 enum CollectionsUtils {
-     ads, products ,categories
+     ads, products ,categories,cart
      }
